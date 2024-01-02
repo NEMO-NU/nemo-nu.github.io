@@ -11,8 +11,7 @@ url: "https://nemo-nu.github.io/"
 images:
   favicon: "/images/nemo_icon.ico"
   hero: "/images/rl nemo_icon.png"
-  seo: "/images/seo.png"
-  education: "/images/syracuse.png"
+  seo: "/images/rl nemo_icon.png"
 
 about:
   - >

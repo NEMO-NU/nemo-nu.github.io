@@ -10,7 +10,7 @@ $font_color: black;
 $dark_blue: #050050;
 $blue: #9b96ca;
 $light_blue: #ebeaf6;
-$purple: #b87ad7;
+$purple: #bf8dd7;
 $light_purple: $purple;
 $dark_purple: #410f5a;
 
@@ -296,7 +296,7 @@ li {
 // }
 
 .faq {
-  @include section($bg: $light_purple);
+  @include section;
 }
 
 .qna {
@@ -324,6 +324,7 @@ li {
   @include section;
   text-align: center;
   padding-bottom: 4rem !important;
+  border-top: 0.2rem solid $light_purple;
 }
 
 .footer .col {
