@@ -1,0 +1,73 @@
+# --------------
+# -- Settings --
+# --------------
+
+title: Northwestern Emergency Medical Organization
+description: >-
+  Official site for Northwestern's on-campus EMT instruction course.
+baseurl: ""
+url: "https://nemo-nu.github.io/"
+
+images:
+  favicon: "/images/nemo_icon.ico"
+  hero: "/images/rl nemo_icon.png"
+  seo: "/images/seo.png"
+  education: "/images/syracuse.png"
+
+about:
+  - >
+      We are a student run organization that provide a course designed to teach students the necessary skills required for
+      emergency medical care at a basic life support level and prepare them for the National Registry of EMTs exam.
+  - >
+      Course is offered to students enrolled at Northwestern University from Winter to Spring Quarter (January-May). Classes 
+      are virtual from 6-10pm every Wednesday and in-person from 9am-12pm every Sunday.
+
+mission:
+    text: >
+      NEMO's mission is to promote awareness of emergency medicine and provide opportunities for students to learn about
+      relevant medical knowledge. It is the goal of the organization to equip students with invaluable training such as
+      EMT-B licensing and CPR certification that may be needed during a sudden medical emergency.
+
+faq:
+  - question: >
+      How can I join?
+    answer: >
+      We host a table at the Student Organization Fair where you can register. We will add you to an email list and tell you more about the course there.
+  - question: >
+      How time consuming is the course?
+    answer: > 
+      It is about as much work as adding on an additional class.
+  - question: >
+      Can I get financial aid for this course?
+    answer: > 
+      Yes! You can apply for the SAAF (gives up to $600). We can also work out payment plans individually.
+  - question: >
+      How do I pay?
+    answer: > 
+      You will pay through checks made out to "Northwestern Emegency Medical Organization" and we will let you know when to pay well in advance.
+
+Links:
+
+footer:
+  - name: "Instagram"
+    link: "https://www.instagram.com/nemo.northwestern?igsh=cDZrN241MjI5eTZx"
+
+  - name: "Slack"
+    link: "https://nemo-6fg9047.slack.com/join/shared_invite/zt-2906bqjc7-dNJ0GhHova8bu9tWq3wCyg#/shared-invite/email"
+
+
+
+# Build settings
+theme: minima
+
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
