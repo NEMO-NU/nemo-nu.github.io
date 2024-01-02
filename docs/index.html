@@ -6,7 +6,7 @@ layout: default
 
 <section class="about" id="about">
   <div class="text-center">
-    <h3>◇ About Me ◇</h3>
+    <h3>◇ About Us ◇</h3>
   </div>
   <div class="container">
     {% for text in site.about %}
@@ -15,72 +15,38 @@ layout: default
   </div>
 </section>
 
-<section class="featured" id="featured">
+<section class="mission" id="mission">
   <div class="text-center">
-    <h3>◇ Featured Work ◇</h3>
+    <h3>◇ Our Mission ◇</h3>
   </div>
   <div class="container">
-    {% for project in site.featured %}
-    <div class="project row align-items-center justify-content-around">
-      {% assign align = forloop.index | modulo:2 %}
-      {% if align == 1 %}
-      <div class="col-6 no-tablet">
-        <h4>{{ project.title }}</h4>
-        {{ project.text | markdownify }}
-      </div>
-      {% endif %}
-      <div class="col tablet">
-        <h4>{{ project.title }}</h4>
-        {{ project.text | markdownify }}
-      </div>
-      <div class="col carousel-col">
-        <div class="carousel">
-          {% for image in project.images %}
-          <div class="carousel-cell">
-            <a href="{{ image }}" target="_blank">
-              <img src="{{ image }}" alt="{{project.title}}">
-            </a>
-          </div>
-          {% endfor %}
-        </div>
-      </div>
-      {% if align == 0 %}
-      <div class="col-6 no-tablet">
-        <h4>{{ project.title }}</h4>
-        {{ project.text | markdownify }}
-      </div>
-      {% endif %}
-    </div>
+    {{ site.mission.text | markdownify }}
+  </div>
+</section>
+
+<section class="wwd" id="wwd">
+  <div class="text-center">
+    <h3>◇ What We Do ◇</h3>
+  </div>
+  <div class="container">
+    {% for text in site.wwd %}
+    {{ text | markdownify }}
     {% endfor %}
   </div>
 </section>
 
-<section class="work" id="work">
+<section class="faq" id="faq">
   <div class="text-center">
-    <h3>◇ Work History ◇</h3>
+    <h3>◇ FAQ ◇</h3>
   </div>
   <div class="container">
-    {% for job in site.work %}
-    <div class="job">
-      <h4>{{ job.company }}</h4>
-      <h5>{{ job.role }}</h5>
-      <h5>{{ job.years }}</h5>
+    {% for q in site.faq %}
+    <div class="qna">
+      <h4>{{ q.question }}</h4>
       <div class="desc">
-        {{ job.description | markdownify }}
+        {{ q.answer | markdownify }}
       </div>
     </div>
     {% endfor %}
-  </div>
-</section>
-
-<section class="education" id="education">
-  <div class="text-center">
-    <h3>◇ Education ◇</h3>
-  </div>
-  <div class="container">
-    <a href="https://www.syracuse.edu/" target="_blank">
-      <img src="{{ site.images.education }}" alt="Syracuse University">
-    </a>
-    {{ site.education | markdownify }}
   </div>
 </section>
